@@ -1,0 +1,14 @@
+{
+    "name": "sontaya/eprofile-app",
+    "type": "project",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Sontaya Yamdach",
+            "email": "sontaya.yam@gmail.com"
+        }
+    ],
+    "require": {
+        "firebase/php-jwt": "^5.0"
+    }
+}

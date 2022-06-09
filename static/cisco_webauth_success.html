@@ -1,0 +1,38 @@
+<HTML><HEAD>
+<TITLE>Authentication Proxy Success Page</TITLE>
+<script type="text/javascript">
+    var donesubmitted = false;
+    function DoneButton() {
+        if (donesubmitted == false) {
+            donesubmitted = true;
+          window.opener.location.reload();
+          window.close();
+        }
+    }
+    setTimeout("DoneButton()", 5000);
+</script>
+</HEAD>
+<BODY>
+<H1>Cisco Systems</H1><H2>Web Authentication</H2>
+<p>Authentication Successful !</p>
+<FORM>
+  <input type=button name=enter value=DONE onClick="DoneButton();">
+</FORM>
+<noscript>
+<BR>
+<UL>
+  <H2><FONT COLOR="red">Warning!</FONT></H2>
+  <p>JavaScript should be enabled in your Web browser 
+     for secure authentication</p>
+  <LI>Follow the instructions of your Web browser to enable 
+      JavaScript if you would like to have JavaScript enabled 
+      for secure authentication</LI>
+  <BR>OR<BR><BR>
+  <LI> Follow these steps if you want to keep JavaScript
+       disabled or if your browser does not support JavaScript
+    <OL><BR>
+      <LI> Close this Web brower window</LI>
+      <LI> Click on Reload button of the original browser window</LI>
+    </OL></LI>
+</UL>
+</noscript></BODY></HTML>

@@ -1,0 +1,41 @@
+<HTML><HEAD>
+<TITLE>Authentication Proxy Login Page</TITLE>
+<script type="text/javascript">
+var pxypromptwindow1;
+var pxysubmitted = false;
+function submitreload() {
+    if (pxysubmitted == false) {
+        pxypromptwindow1=window.open('', 'pxywindow1', 'resizable=no,width=350,height=350,scrollbars=yes');
+        pxysubmitted = true;
+        return true;
+    } else {
+        alert("This page can not be submitted twice.");
+        return false;
+    }
+}
+</script>
+</HEAD>
+<BODY>
+<H1>Cisco Systems</H1><H2>Web Authentication</H2>
+<FORM method=post action="/" target="pxywindow1">
+  Username: <input type=text name=uname><BR><BR>
+  Password: <input type=password name=pwd><BR><BR>
+  <input type=submit name=ok value=OK   onClick="return submitreload();">
+</FORM><noscript>
+<BR>
+<UL>
+  <H2><FONT COLOR="red">Warning!</FONT></H2>
+  <p>JavaScript should be enabled in your Web browser 
+     for secure authentication</p>
+  <LI>Follow the instructions of your Web browser to enable 
+      JavaScript if you would like to have JavaScript enabled 
+      for secure authentication</LI>
+  <BR>OR<BR><BR>
+  <LI> Follow these steps if you want to keep JavaScript
+       disabled or if your browser does not support JavaScript
+    <OL><BR>
+      <LI> Close this Web brower window</LI>
+      <LI> Click on Reload button of the original browser window</LI>
+    </OL></LI>
+</UL>
+</noscript></BODY></HTML>

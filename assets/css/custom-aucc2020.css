@@ -1,0 +1,35 @@
+html, body{
+    font-family: 'Maledpan';
+}
+
+.form-control{
+    font-family: 'Maledpan';
+}
+
+.btn{
+    font-family: 'Maledpan';
+}
+
+.btn.m-btn--custom{
+    font-family: 'Maledpan';
+}
+
+.m-login__agreement{
+    display: none;
+}
+.m-login__AccountInfo{
+    display: none;
+}
+
+.m-login.m-login--2 .m-login__wrapper .m-login__container .m-login__logo {
+    text-align: center;
+    margin: 0 auto 2rem auto;
+}
+
+.m-login.m-login--2.m-login-2--skin-2 .m-login__container .m-login__head .m-login__title{
+    color: #e0b417;
+}
+
+.m-login.m-login--2 .m-login__wrapper .m-login__container .m-login__form {
+    margin: 2rem auto;
+}
